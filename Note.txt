@@ -40,3 +40,11 @@ git merge join  (kopijojam i musu pagrindinį branchą visus pakeitimus iš join
 12.Susiliginau su nuotoline repozitorija -> git add . -> git commit -m "Make some changes in comments" -> git push  (PaulinaStan)
 13.fork->create fork -> git clone https://github.com/Anzelika2022/workTogetherStart.git workTogether  (Anzelika2022)
 14.padarem pakeitimus -> git add . -> git commit -m "darem pakeitimus" -> git push  (Anzelika2022)
+15.git checkout -b kitasKanalas  (Sukuriam nauja atšaką(branchą) ,kitasKanalas- tai mano naujo brancho pavadinimas)->
+     git remote add kitasKanalas https://github.com/AKV85/workTogetherStart.git  (dabar susiejam nauja branchą su nuotoline repozitoriją)->
+     git stash save  "test"->
+     git pull kitasKanalas --rebase  (gaunam pakeitimus i musu nauja atšaka(brancha) kurie atsirado po pakeitimu) ->
+     git checkout main (pereinam i pagrindinę atšaką(branchą) ->
+     git merge kitasKanalas  (kopijojam i musu pagrindinį branchą visus pakeitimus iš kitasKanalas brancho)   (Anzelika2022)
+16.Susiliginau su nuotoline repozitorija ir pakeiciau failus-> git add . -> git commit -m "padariau nauja branch, supulinau ir su merginau" -> git push  (Anzelika2022)
+
